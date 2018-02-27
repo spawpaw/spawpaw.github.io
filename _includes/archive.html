@@ -1,0 +1,21 @@
+<ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+            {% unless post.next %}
+                <h2> {{ post.date | date: '%Y' }}</h2>
+            {% else %}
+                {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+                {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+
+                {% if year != nyear %}
+                    <h3>{{ post.date | date: '%Y' }}</h3>
+                {% endif %}
+                {% assign date_format = site.date_format.archive %}
+                
+            {% endunless %}
+          
+               <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}<span class="post-meta">&nbsp;&nbsp;{{ post.date | date: "%b %-d, %Y" }}</span></a>
+           
+      </li> 
+    {% endfor %}
+</ul>

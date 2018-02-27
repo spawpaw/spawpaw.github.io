@@ -1,0 +1,55 @@
+
+<div class="card">
+    <div class="card-row">
+        <div class="avatar-container">
+            <img class="avatar" src="https://avatars3.githubusercontent.com/u/{{ site.github_user_id }}?v=4" alt="头像">
+            <div class="avatar-description">
+                    <div>{{ site.default_username }}</div>
+            </div>
+        </div>
+    </div>
+    
+    <hr style="margin:8px 0 8px 0;">
+    <div class="card-row">
+        {% if site.github_username %}
+            {% include icon-github.html username=site.github_username %}
+        {% endif %}
+    </div>
+
+    <div class="card-row">
+        <p class="rss-subscribe">
+                {% include icon-rss.html %}  
+        </p>
+    </div>
+</div>
+
+{% if site.data.tops.size > 0 %}
+<div class="card">
+    <h2 class="card-row">推荐阅读</h2>
+    <hr> {% for top in site.data.tops %} {% for post in site.posts %} {% if post.url contains top.url %}
+    <div class="card-row">
+        <a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a>
+    </div>
+    {% endif %} {% endfor %} {% endfor %}
+</div>
+{% endif %}
+
+<div class="card">
+    <h2 class="card-row">最新文章</h2>
+    <hr> {% for post in site.posts limit:5 %}
+    <div class="card-row">
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    </div>
+    {% endfor %}
+</div>
+
+{% if site.data.links.size > 0 %}
+<div class="card">
+    <h2 class="card-row">友情链接</h2>
+    <hr> {% for link in site.data.links %}
+    <div class="card-row">
+        <a href="{{ link.url }}">{{ link.title }}</a>
+    </div>
+    {% endfor %}
+</div>
+{% endif %}
