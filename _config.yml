@@ -31,3 +31,4 @@ date_format:
 # default
 #   - page
 #   - post
+theme: jekyll-theme-minimal
