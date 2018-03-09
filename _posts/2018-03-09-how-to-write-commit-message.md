@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Git Commit"
-date:   2017-04-09 16:45:40 +0800
+date:   2018-03-09 13:24:00 +0800
 categories: Github
 tags: github commit-msg
 ---
