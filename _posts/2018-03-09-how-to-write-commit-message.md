@@ -9,13 +9,12 @@ tags: github commit-msg
 ## 一个良好的commit格式：
 
 ```
-<type>(module): <subject>(#issueId)
+<type><(scope)>: <subject><(#issueId)>
 <BLANK LINE>
 <body>
 <BLANK LINE>
 <footer>
 ```
-
 
 ### types：
 - feat: 添加新特性
@@ -27,6 +26,24 @@ tags: github commit-msg
 - test: 增加测试用例
 - chore: 改变构建流程、或者增加依赖库、工具等
 
+### scope: 
+ 
+ can be empty (eg. if the change is a global or difficult to assign to a single component)
+
+### subject: 
+
+start with verb (such as 'change'), 50-character line
+
+### body:
+  
+ 72-character wrapped. This should answer:
+ * Why was this change necessary?
+ * How does it address the problem?
+ * Are there any side effects?
+
+### footer: 
+ - Include a link to the ticket, if any.
+ - BREAKING CHANGE
 
 
 ## 参考项目
