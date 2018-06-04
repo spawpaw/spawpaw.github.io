@@ -1,3 +1,7 @@
+
+文章类型：原创、转载-已授权、转载-未授权
+type:original | reprint-authorized | reprint
+
 一个分类可包含多个标签
 
 分类：
