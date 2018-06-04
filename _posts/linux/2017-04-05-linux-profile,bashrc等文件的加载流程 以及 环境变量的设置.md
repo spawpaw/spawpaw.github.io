@@ -3,7 +3,7 @@ layout: post
 title:  "linux /etc/profile,bashrc等文件的加载流程 以及 环境变量的设置"
 date:   2017-04-05 16:45:40 +0800
 categories: linux
-tags: 环境变量 profile bashrc
+tags: env-var profile bashrc
 ---
 
 >因为最近在debian上设置java环境变量，研究了一下profile等文件的加载流程

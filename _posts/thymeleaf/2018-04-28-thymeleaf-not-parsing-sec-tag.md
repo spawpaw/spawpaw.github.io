@@ -6,7 +6,7 @@ categories: web
 tags: spring thymeleaf sec
 ---
 
-在用Thymeleaf时发现`sec:authorize="hasRole('ROOT')"`标签不能被解析，在pom中添加如下依赖即可:
+`Thymeleaf`和`Spring Security整合`时, 发现`sec:authorize="hasRole('ROOT')"`标签不能被解析，在pom中添加如下依赖即可:
 
 ```xml
 <dependency>

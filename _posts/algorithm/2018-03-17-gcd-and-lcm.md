@@ -2,8 +2,8 @@
 layout: post
 title:  "“最大公约数” 和 “最小公倍数”"
 date:   2018-03-17 23:08:00 +0800
-categories: 算法
-tags: 算法
+categories: algorithm
+tags: gcd lcm
 ---
 
 ## 最大公约数 Greatest Common Divisor(GCD)
