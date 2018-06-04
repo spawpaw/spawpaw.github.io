@@ -6,11 +6,11 @@ categories:
 tags: english vocabulary 
 ---
 
-|      单词      |    释义            |
-|:-------------:|:-----------------:|
-|embed          |把…嵌入|
-|Malicious      |有恶意的|
-|immutable      |不可改变的|
-|unidirectional |单向的|
-|bidirectional  |双向的|
-|synthetic      |虚构的|
+|      单词     |音标              |    释义            |
+|:------------- |:-----------------|:-----------------:|
+|embed          |                  | 把…嵌入 |
+|malicious      |                  | 有恶意的 |
+|immutable      |                  | 不可改变的 |
+|unidirectional |                  | 单向的 |
+|bidirectional  |                  | 双向的 |
+|synthetic      |                  | 虚构的 |
