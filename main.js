@@ -99,7 +99,7 @@ const tocObj = {
 function renderToc(text, level, raw) {
     var anchor = tocObj.add(text, level);
     return `<a id=${anchor} class="anchor-fix"></a><h${level}>${text}</h${level}>\n`;
-};
+}
 
 
 function renderMd(elementId, markdownContent) {
