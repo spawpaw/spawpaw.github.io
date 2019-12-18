@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="content"></div>
+<div id="toc"></div>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<link rel="stylesheet" href="./markd.css">
+<link rel="stylesheet"
+      href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/default.min.css">
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
+<!--https://unpkg.com/browse/mermaid@8.4.4/-->
+<script src="https://unpkg.com/mermaid@8.4.4/dist/mermaid.min.js"></script>
+<script src="./main.js"></script>
+<script>
+    document.ready(function () {
+        renderMd('content', '# Marked in the browser\n\n' +
+            'Rendered by **marked**.\n\n'
+            + '\n\n'
+            + '```java\n\n'
+            + 'public class Main{\n\n'
+            + '    public static void main(){}\n\n'
+            + '\n\n'
+            + '\n\n'
+            + '```\n\n'
+            + '```mermaid\n\n'
+            + 'pie title NETFLIX\n\n'
+            + '         "Time spent looking for movie" : 90\n\n'
+            + '         "Time spent watching it" : 10\n\n'
+            + '\n\n'
+            + '\n\n'
+            + '```\n\n'
+            + '\n\n')
+    });
+</script>
+</body>
+</html>

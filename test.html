@@ -1,0 +1,18 @@
+
+
+{% for tag in sortedtags %}
+<h2>{{ tag[0] | capitalize }}</h2>
+<ul>
+    {% assign pages_list = tag[1] %}
+    {% for node in pages_list %}
+    {% if node.title != null %}
+    {% if group == null or group == node.group %}
+    <li><span class="post-date">
+                    {% assign date_format = site.date_format.tag %}
+                    {{ node.date | date: site.date_format.tag }} </span></span><a href="{{ site.baseurl}}{{ node.url }}"> {{ node.title }}</a></li>
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+    {% assign pages_list = nil %}
+</ul>
+{% endfor %}
