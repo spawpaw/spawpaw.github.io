@@ -6,61 +6,67 @@ type:original | reprint-authorized | reprint
 
 分类：
 
-- categories
-    - linux
-    - lang
-        - java
-        - ...
-    - algorithm    
-    - github
-    - ssm
 
-- tags
-    - lang
-        - java
-        - c/c++
-        - python
-        - kotlin
-        - bat
-        - bash
-        - css
-        - js
-        - html
-        - 
-    - os
-        - linux
-            - ubuntu
-            - debian
-            - kali
-            - redhat
-        - windows
-            - windows-xp
-            - windows-7
-            - windows-8
-            - windows-10
-        - mac-os
+- categories # main tag
+    - linux
+    - java
+    - spring
     - algorithm
-        - DP
-        - LIS
-    - database
-        - mysql
-        - sql-server
-        - oracle-db
-        - sql
-    - dev-tools
-        - mysql-workbench
-        - navicat
-        - idea
-        - npm
-        - node
-        - jdk
-            - open-jdk
-            - oracle-jdk
-    - framwork
-        - angular
-        - vue
-        - react
-        - spring
-            - spring-cloud
-        - mybatis
-    - 
+    - github
+
+### tags
+- algorithm
+- lang
+    - java
+    - bash
+    - bat/cmd/vbs/ps1
+    - js
+    - c/c++
+    - css
+    - html
+    - python
+    - kotlin
+- os
+    - linux
+        - ubuntu
+        - debian
+        - kali
+        - redhat
+    - windows
+        - windows-xp
+        - windows-7
+        - windows-8
+        - windows-10
+    - mac-os
+- database
+    - mysql
+    - sql-server
+    - oracle-db
+    - sqlite
+    - clickhouse
+    - elasticsearch
+- devtools
+    - mysql-workbench
+    - navicat
+    - idea
+    - npm
+    - node
+    - jdk
+        - open-jdk
+        - oracle-jdk
+- framework
+    - angular
+    - vue
+    - react
+    - spring
+        - spring-boot
+        - spring-cloud
+        - spring-security
+        - spring-data
+    - mybatis
+    - hikari
+- keyword
+  - ORM
+  - bigdata
+  - etl
+  - ...
